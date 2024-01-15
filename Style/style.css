@@ -1,0 +1,124 @@
+/* Font mulish all bold */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    background: #FFF;
+    margin:0;
+    font-family: 'Mulish', sans-serif;
+}
+
+:root{
+    --heading-color:#131318;
+    --paragraph-color:rgba(56, 56, 59, 0.7);
+    --heading-font-size:3rem;
+    --title-font-size:1.8rem;
+    --paragraph-font-size:0.8rem;
+    --heading-title-font-weight:800;
+    --paragraph-font-weight:600;
+    --btn-color:#FF5400;
+}
+.shared-span{
+    color:var(--btn-color);
+}
+.btn-primary{
+    padding:1rem 1.8rem;
+    border:none;
+    border-radius: 8px;
+    color:#FFF;
+    background-color: var(--btn-color);
+    cursor:pointer;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+nav{
+    border:2px solid yellow;
+   display: flex;
+   justify-content: space-between;
+   margin:1rem 6rem;
+   align-items: center;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color:var(--paragraph-color);
+    font-weight: var(--paragraph-font-weight);
+    font-size: var(--paragraph-font-size);
+    padding:0 1rem;
+}
+nav ul{
+    display: flex;
+
+}
+nav li{
+    list-style: none;
+}
+/* Styles of Banner of header starts here */
+.banner{
+    margin:2rem 6rem;
+    border:2px solid blue;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13.png);
+    background-size:cover;
+    height:80vh;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-position: center;
+    border-radius: 15px;
+    
+}
+.banner>.h1{
+color:#FFF;
+font-weight: 800;
+}
+.banner>.p{
+    color:#FFF;
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-font-weight);
+}
+.popular-tours{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:6rem 6rem;
+    justify-content: space-between;
+    padding: 0%;
+    align-items: center;
+    border:1px solid green;
+}
+.popular-text-section{
+    width:32rem;
+    height:auto;
+    border:1px solid black;
+    
+}
+.popular-text-section>h3{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color:var(--heading-color);
+}
+.popular-text-section>p, .popular-text-section>ul{
+    font-size: var(--paragraph-font-size);
+    color:var(--paragraph-color);
+    font-weight: var(--paragraph-font-weight);
+}
+.popular-text-section>p{
+    padding-top: 1.5rem;
+}
+.popular-text-section li{
+   padding-top: 1.5rem;
+}
+.popular-img-section{
+    width:32rem;
+    height: 33rem;
+    background: url("../Images/Rectangle\ 4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border:1px solid green;
+    margin-right: 0%;
+    margin-left: 2rem;
+
+}

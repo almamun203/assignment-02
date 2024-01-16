@@ -34,10 +34,10 @@ header{
     height:100vh;
 }
 nav{
-    border:2px solid yellow;
+ 
    display: flex;
    justify-content: space-between;
-   margin:5% 7%;
+   margin:2% 7%;
    align-items: center;
 }
 nav svg{
@@ -64,13 +64,14 @@ nav li{
 /* Styles of Banner of header starts here */
 .banner{
     margin:5% 7%;
-    border:none;
+   
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),url(../Images/Group\ 13.png);
     background-size:cover;
     height:85vh;
     background-repeat: no-repeat;
     padding-top: 7rem;
-   
+    padding-bottom: 0;
+   margin-bottom: 1rem;
     text-align: center;
     background-position: center;
     border-radius: 15px;
@@ -87,21 +88,23 @@ font-size: 3rem;
     font-weight: var(--paragraph-font-weight);
 }
 .banner-form{
-    background:none;
+    background:linear-gradient(180deg, rgba(218, 218, 229, 0.8) 0%, rgba(19, 19, 24, 0.00) 100%);
     display: flex;
     justify-content: center;
     border-radius: 10px;
-   
+    padding:-2rem;
+    margin-left:2rem;
+    margin-right:2rem;
 }
 .banner-form input{
-    background:linear-gradient(180deg, rgba(218, 218, 229, 0.8) 0%, rgba(19, 19, 24, 0.00) 100%);
+    background:#FFF;
    
-    color:#FFF;
+    color: #131318;
     font-weight: 700;
     padding: -3rem 0.5rem;
     margin:3rem 1rem;
     border: none;
-    border-radius: 3rem;
+    border-radius: 0.3rem;
 }
 .btn-primary>i{
    
@@ -109,18 +112,18 @@ font-size: 3rem;
     color:#FFF;
 }
 .popular-tours{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin:7% 7%;
+   display: flex;
+   flex-direction: row;
+    margin:2rem 7%;
     justify-content: space-between;
     padding: 0%;
     align-items: center;
-    border:1px solid green;
+
 }
 .popular-text-section{
     width:32rem;
     height:auto;
-    border:1px solid black;
+
     
 }
 .popular-text-section>h3{
@@ -146,20 +149,24 @@ font-size: 3rem;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    border:1px solid green;
+
+    
     margin-right: 0%;
     margin-left: 2rem;
 
 }
 .destination{
-    border:2px solid blue;
+ 
     margin:1% 7%;
     height:150vh;
     text-align: center;
     align-items: center;
 }
 .desti-title{
-    background: none;
+    margin:3rem auto;
+}
+.desti-title>h2{
+    margin-bottom: 1rem;
 }
 .desti-row1{
     display:grid;
@@ -241,8 +248,116 @@ font-size: 3rem;
     font-size: 1rem;
     font-weight: 800;
     background: none;
-    border:2px solid black;
+    
     color:#FFF;
+}
+.why-choose-us{
+    margin:5% 20%;
+    justify-content: center;
+}
+.why-choose-us-head{
+    width:100%;
+ 
+    text-align: center;
+}
+.hotel{
+    border:none;
+    background-color: rgb(226, 241, 211);
+    border-radius: 1rem;
+    width:50%;
+    height:30vh;
+    margin:1rem;
+    padding:1rem;
+}
+.service{
+    border:none;
+    background-color: rgb(240, 228, 213);
+    border-radius: 1rem;
+    width:50%;
+    margin:1rem;
+    height:30vh;
+    padding:1rem;
+}
+.price{
+    border:none;
+    background-color: rgb(179, 200, 247);
+    border-radius: 1rem;
+    width:50%;
+    margin:1rem;
+    height:30vh;
+    padding:1rem;
+    margin-left:9rem ;
+}
+
+.hotel h3, .hotel img, .hotel p{
+    background: none;
+}
+.service img, .service h3, .service p{
+    background: none;
+}
+.price img, .price h3, .price p{
+    background: none;
+}
+.benefit-hotel-service{
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.subscription{
+    display: flex;
+    margin:5% 15%;
+    height:50vh;
+}
+.subscribe-form{
+    width:42%;
+    margin-right: 2%;
+    border-radius: 1rem;
+    border:1px solid #FF5400;
+    padding:1rem;
+}
+.subscribe-form hr{
+margin:1rem 0 ;
+color:#808086;
+}
+.seventy-off{
+    background-image: url("../Images/Rectangle\ 8\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    width:57%;
+}
+footer {
+    margin:5% 7%;
+    text-align: center;
+}
+.footer-link{
+   
+    display: flex;
+    margin-bottom:1.5rem ;
+    justify-content: center;
+}
+.link-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:1.5rem ;
+}    
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1.5rem ;
+}
+footer hr{
+    color:rgba(117, 117, 121, 0.7);
+    margin-bottom: 1rem;
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+  
 }
 @media screen and (max-width:576px) {
     nav ul{
@@ -251,9 +366,20 @@ font-size: 3rem;
     nav svg{
         display: inline;
     }
+    
     .popular-tours{
+        display: flex;
+        flex-direction: column-reverse;
+       
         margin:7% 7%;
-        grid-template-columns: repeat(1,1fr);
+       
+        padding: 0%;
+        align-items: center;
+      
+    }
+    .popular-text-section, .popular-img-section{
+        width:100%;
+        height:auto;
     }
     .banner-form{
         
@@ -267,7 +393,14 @@ font-size: 3rem;
         margin:0.5rem ;
     }
     .banner .btn-primary{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
+    .desti-row1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .desti-row2{
+        flex-direction: column;
+    }
+    
 } 

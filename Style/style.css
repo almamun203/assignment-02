@@ -1,6 +1,7 @@
 /* Font mulish all bold */
   @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
-*{
+/* Shared & Universal Styles */
+  *{
     background: #FFF;
     margin:0;
     font-family: 'Mulish', sans-serif;
@@ -20,7 +21,7 @@
     color:var(--btn-color);
 }
 .btn-primary{
-    padding:1rem 1.8rem;
+    padding:1rem 1.5rem;
     border:none;
     border-radius: 8px;
     color:#FFF;
@@ -30,6 +31,11 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+.btn-primary:hover{
+   
+    border:2px solid brown;
+}
+/* Header Styles Starts Here */
 header{
     height:100vh;
 }
@@ -47,12 +53,19 @@ nav svg{
     display: flex;
     align-items: center;
 }
+.nav-left h3{
+    font-size: 1.5rem;
+}
 nav a{
     text-decoration: none;
     color:var(--paragraph-color);
     font-weight: var(--paragraph-font-weight);
     font-size: var(--paragraph-font-size);
     padding:0 1rem;
+}
+nav a:hover{
+    font-size:1rem;
+    
 }
 nav ul{
     display: flex;
@@ -93,16 +106,17 @@ font-size: 3rem;
     justify-content: center;
     border-radius: 10px;
     padding:-2rem;
-    margin-left:2rem;
-    margin-right:2rem;
+    margin-left:7rem;
+    margin-right:7rem;
+    margin-top: 2rem;
 }
-.banner-form input{
+.banner-form select{
     background:#FFF;
    
-    color: #131318;
+    color: #75757f;
     font-weight: 700;
-    padding: -3rem 0.5rem;
-    margin:3rem 1rem;
+    padding: 1.5rem 2rem;
+    margin:2rem 0.5rem;
     border: none;
     border-radius: 0.3rem;
 }
@@ -111,10 +125,13 @@ font-size: 3rem;
     background: none;
     color:#FFF;
 }
+/* Header Section Styles Ends Here
+& Main Parts Styles Starts Here */
+/* Section Popular Tours Styles */
 .popular-tours{
    display: flex;
    flex-direction: row;
-    margin:2rem 7%;
+    margin:10rem 7%;
     justify-content: space-between;
     padding: 0%;
     align-items: center;
@@ -155,6 +172,7 @@ font-size: 3rem;
     margin-left: 2rem;
 
 }
+/* Section Destination Styles */
 .destination{
  
     margin:1% 7%;
@@ -167,6 +185,7 @@ font-size: 3rem;
 }
 .desti-title>h2{
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 .desti-row1{
     display:grid;
@@ -248,17 +267,34 @@ font-size: 3rem;
     font-size: 1rem;
     font-weight: 800;
     background: none;
-    
+    display: flex;
+    align-content: center;
+    justify-content: center;
     color:#FFF;
+    
+    margin-top: 8rem;
+
 }
+/* Section Why Choose Us Styles */
 .why-choose-us{
-    margin:5% 20%;
+    margin:10% 20%;
     justify-content: center;
 }
 .why-choose-us-head{
     width:100%;
  
     text-align: center;
+}
+.why-choose-us-head .shared-title{
+    font-size:1.5rem;
+    font-weight: var(--heading-title-font-weight);
+
+    
+}
+.why-choose-us-head p{
+    margin:1rem 0rem;
+    font-size: var(--paragraph-font-size);
+    color:#3f3f46;
 }
 .hotel{
     border:none;
@@ -278,6 +314,12 @@ font-size: 3rem;
     height:30vh;
     padding:1rem;
 }
+.price-container{
+    width:100%;
+   
+    display: flex;
+    justify-content: center;
+}
 .price{
     border:none;
     background-color: rgb(179, 200, 247);
@@ -286,9 +328,11 @@ font-size: 3rem;
     margin:1rem;
     height:30vh;
     padding:1rem;
-    margin-left:9rem ;
 }
-
+.hotel p, .service p, .price p{
+    font-size: var(--paragraph-font-size);
+    color:#323237;
+}
 .hotel h3, .hotel img, .hotel p{
     background: none;
 }
@@ -301,8 +345,84 @@ font-size: 3rem;
 .benefit-hotel-service{
     display: flex;
     box-sizing: border-box;
-    
 }
+/* Bonus Unique Section Styles*/
+.bonus-unique-section{
+    margin:0% 15% 8% 15%; 
+}
+.bonus-headings{
+ 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bonus-unique-section h3{
+    font-weight: var(--heading-title-font-weight);
+    font-size: 1.5rem;
+}
+.btn-france{
+    margin:0.3rem 40%;
+    border:none;
+    background-color: #FF5400;
+    color:#FFF;
+    font-weight: var(--paragraph-font-weight);
+    border-radius: 1rem;
+    padding:0.5rem;
+}
+.btn-france:hover{
+  border:2px solid brown;
+}
+.gallery{
+    display:flex;
+    flex-direction: row;
+    
+
+}
+.gallery img{
+    width:100%;
+    border-radius: 1rem;
+    margin:1rem;
+   
+}
+.gallery img:hover{
+    width:33vw;
+    height:40vh;
+   
+    position:sticky;
+}
+/* Footage Section Styles */
+.footage{
+    margin:5% 15%;
+    display: flex;
+
+}
+.footage-text{
+    padding-top: 3rem;
+}
+footage-text-container{
+    width:50%;
+    align-items: center;
+    border: 2px solid black;
+    display: flex;
+   
+}
+.footage-text h3{
+    font-size: 2rem;
+    font-weight: var(--heading-title-font-weight);
+}
+.footage p, .footage li{
+    font-size: var(--paragraph-font-size);
+    color:#3f3f46;
+    margin-top: 0.5rem;
+}
+.footage-clip{
+    width:50%;
+    padding:0;
+}
+.footage-clip iframe{
+    border-radius: 1rem;
+}
+/* Subscription Section Styles */
 .subscription{
     display: flex;
     margin:5% 15%;
@@ -315,9 +435,25 @@ font-size: 3rem;
     border:1px solid #FF5400;
     padding:1rem;
 }
+.subscribe-form p{
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-font-weight);
+    color:#3f3f46;
+}
 .subscribe-form hr{
 margin:1rem 0 ;
 color:#808086;
+}
+.subscribe-form input{
+    border:none;
+    border-radius: 0.5rem;
+    padding:0.7rem 5.7rem;
+    background-color: antiquewhite;
+    margin-top: 0.5rem;
+}
+.subscribe-form .btn-primary{
+    padding:auto 3rem;
+    width:100%;
 }
 .seventy-off{
     background-image: url("../Images/Rectangle\ 8\ \(1\).png");
@@ -326,6 +462,14 @@ color:#808086;
     border-radius: 1rem;
     width:57%;
 }
+.seventy-off .btn-primary{
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-font-weight);
+    
+    transform: rotate(-20deg);
+    margin-left: 1rem;
+}
+/* Footer Section Styles */
 footer {
     margin:5% 7%;
     text-align: center;
@@ -359,6 +503,8 @@ code{
     width: 100%;
   
 }
+/*Responsive Section Styles  */
+/* Styles for mobile devices */
 @media screen and (max-width:576px) {
     nav ul{
         display:none;
@@ -372,7 +518,7 @@ code{
         flex-direction: column-reverse;
        
         margin:7% 7%;
-       
+       margin-top:20% ;
         padding: 0%;
         align-items: center;
       
@@ -396,11 +542,45 @@ code{
         margin-left: 4rem;
         margin-right: 4rem;
     }
+    .destination{
+ 
+        margin:1% 7%;
+        height:max-content;
+        text-align: center;
+        align-items: center;
+    }
     .desti-row1{
         grid-template-columns: repeat(1,1fr);
     }
     .desti-row2{
         flex-direction: column;
+    }
+    #destination-place-srilanka{
+        background-image: url("../Images/Rectangle\ 6.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:45vh;
+        width:100%;
+        border-radius: 1rem;
+    }
+    #destination-place-north-america{
+        background-image: url("../Images/Rectangle\ 7.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:45vh;
+        width:100%;
+        border-radius: 1rem;
+    }
+    #destination-place-kashmir{
+        background-image: url("../Images/Rectangle\ 9.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:45vh;
+        width:100%;
+        border-radius: 1rem;
     }
     
 } 
